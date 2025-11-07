@@ -113,3 +113,12 @@
     document.addEventListener('DOMContentLoaded', function() {
       fetchGitHubRepos();
     });
+    const skillsSection = document.querySelector('.skills-content');
+
+new Waypoint({
+  element: skillsSection,
+  offset: '80%',
+  handler: function() {
+    skillsSection.classList.add('animated');
+  }
+});
